@@ -1,0 +1,42 @@
+{
+    "scopeName": "source.ffp",
+    "patterns": [
+        {
+            "name": "keyword.ffp",
+            "match": "\\b(READ|SET|IN|WRITE|FOR|ENDFOR|SPLIT|THEN|BY|TO|IF|ENDIF|FROM|DO|MATCHES|PRINT|TRIM|UPPERCASE|LOWERCASE|SUBSTRING|SORT|LENGTH|EQUALS)\\b"
+        },
+        {
+            "name": "string.ffp",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "comment.ffp",
+            "begin": "#"
+        },
+        {
+            "name": "number.ffp",
+            "match": "\\b-?[0-9]+"
+        },
+        {
+            "name": "variable.ffp",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        },
+        {
+            "name": "operator.ffp",
+            "match": "\\+|\\-|\\*|\\/|\\^|\\(|\\)|\\[|\\]"
+        },
+        {
+            "name": "regex.ffp",
+            "begin": "/",
+            "end": "/",
+            "patterns": [
+                {
+                    "name": "escape.ffp",
+                    "match": "\\\\."
+                }
+            ]
+        }
+    ],
+    "repository": {}
+}
