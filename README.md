@@ -1,72 +1,39 @@
-# ffp README
+# FFP Visual Studio Code Extension
 
-This is the README for your extension "ffp". After writing up a brief description, we recommend including the following sections.
+This repository contains a Visual Studio Code extension for FFP (Fast File Parser), a custom language designed for efficient file processing and parsing.
+<b>In order to use all of the functionality in this extension, you first need to install FFP from the [official FFP repository](https://github.com/JeremyMColegrove/FFP).</b>
+
+## Overview
+
+Enhance your FFP development experience with this VS Code extension. It provides syntax highlighting, code snippets, and quick run capability, and other features to streamline writing and editing FFP scripts.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Syntax highlighting for FFP files
+- Code snippets for common FFP constructs
+- Quick run
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or pressing `Ctrl+Shift+X`.
+3. Search for "FFP" and find the extension in the list.
+4. Click "Install" to install the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+1. Open an FFP script (`.ffp` file) in VS Code.
+2. Enjoy syntax highlighting and code snippets to assist you in writing FFP code.
+3. Use the quick run button on the bottom to execute your program in the terminal.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## FFP Language
 
-## Extension Settings
+To learn more about FFP, including its syntax and capabilities, visit the [FFP Repository](https://github.com/JeremyMColegrove/FFP).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Contributing
 
-For example:
+Contributions are welcome! Please fork this repository and submit pull requests.
 
-This extension contributes the following settings:
+## License
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-"# FFP-VSCode-Extension" 
+This project is licensed under the MIT License.
