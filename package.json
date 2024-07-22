@@ -1,24 +1,39 @@
 {
   "name": "ffp",
-  "displayName": "ffp",
-  "description": "Fast file parsing with natural SQL-like grammer.",
-  "version": "0.0.1",
+  "displayName": "FFP Syntax and Tools",
+  "description": "Provides syntax highlighting, code snippets, and run button for the Fast File Parser (FFP) language, enhancing efficiency in file processing and parsing.",
+  "version": "0.0.3",
+  "icon": "icon.ico",
+  "publisher": "jeremy-colegrove",
+  "author": {"name": "JeremyMColegrove", "url": "https://www.jeremycolegrove.me", "email": "jeremycolegrove2012@gmail.com"},
+  "repository": {"url": "https://github.com/JeremyMColegrove/FFP-VSCode-Extension", "type": "github"},
   "engines": {
     "vscode": "^1.91.0"
   },
+  
   "categories": [
-    "Other"
+    "Language Packs",
+    "Programming Languages",
+    "Snippets"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:ffp-runner.runFfpFile",
+    "workspaceContains:**/*.ffp"
+],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [],
     "languages": [{
       "id": "ffp",
       "aliases": ["FFP", "ffp", "Fast File Parser"],
       "extensions": [".ffp"],
       "configuration": "./language-configuration.json"
     }],
+    "snippets": [
+      {
+        "language": "ffp",
+        "path": "./snippets.json"
+      }
+    ],
     "grammars": [{
       "language": "ffp",
       "scopeName": "source.ffp",

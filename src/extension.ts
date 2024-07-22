@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    let terminal: vscode.Terminal;
+    let terminal: vscode.Terminal | undefined = undefined;
 
     const myStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
     myStatusBarItem.command = 'ffp-runner.runFfpFile';
@@ -32,11 +32,14 @@ export function activate(context: vscode.ExtensionContext) {
         const filePath = editor.document.uri.fsPath;
 
         // Create or show the terminal
-        if (!terminal) {
+        if (!terminal || terminal.exitStatus) { // Check if the terminal is undefined or has exited
             terminal = vscode.window.createTerminal(`FFP Run`);
         }
         terminal.show(true); // Focus the terminal
 
+        // Clear previous content in the terminal
+        terminal.sendText(`clear`, true);
+        
         // Execute the command
         terminal.sendText(`ffp "${filePath}"`);
     });
@@ -46,6 +49,8 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(new vscode.Disposable(() => {
         terminal?.dispose();
     }));
+
+    
 }
 
 export function deactivate() {}

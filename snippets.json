@@ -1,0 +1,101 @@
+{
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "IF $1 THEN",
+            "\t$2",
+            "ENDIF"
+        ],
+        "description": "If statement"
+    },
+    "For Loop": {
+        "prefix": "for",
+        "body": [
+            "FOR $1 FROM $2 TO $3",
+            "\t$4",
+            "ENDFOR"
+        ],
+        "description": "For loop"
+    },
+    "Iterator Loop": {
+        "prefix": "for",
+        "body": [
+            "FOR $1 IN $2 DO",
+            "\t$3",
+            "ENDFOR"
+        ],
+        "description": "For loop"
+    },
+    "Split String": {
+        "prefix": "split",
+        "body": [
+            "SPLIT $1 BY $2 TO $3"
+        ]
+    },
+    "Matches Regex": {
+        "prefix": "matches",
+        "body": [
+            "\"$1\" MATCHES /$2/"
+        ]
+    },
+    "Set Variable": {
+        "prefix": "set",
+        "body": [
+            "SET $1 TO $2"
+        ]
+    },
+    "Read from File": {
+        "prefix": "read",
+        "body": [
+            "READ $1 TO $2"
+        ]
+    },
+    "Write to File": {
+        "prefix": "write",
+        "body": [
+            "WRITE $1 TO $2"
+        ]
+    },
+    "Append to File": {
+        "prefix": "append",
+        "body": [
+            "APPEND $1 TO $2"
+        ]
+    },
+    "Substring of Array/String": {
+        "prefix": "substring",
+        "body": [
+            "SUBSTRING $1 FROM $2 TO $3"
+        ]
+    },
+    "Print": {
+        "prefix": "print",
+        "body": [
+            "PRINT $1"
+        ]
+    },
+    "Reverse Array/String": {
+        "prefix": "reverse",
+        "body": [
+            "REVERSE $1"
+        ]
+    },
+    "Trim String": {
+        "prefix": "trim",
+        "body":[
+            "TRIM $1"
+        ]
+    },
+    "Sort Array/String": {
+        "prefix": "sort",
+        "body": [
+            "SORT $1"
+        ]
+    },
+    "Length of Array/String": {
+        "prefix": "length",
+        "body":[
+            "LENGTH $1"
+        ]
+    }
+}
