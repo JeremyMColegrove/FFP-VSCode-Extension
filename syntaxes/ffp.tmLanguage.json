@@ -4,7 +4,11 @@
     "patterns": [
         {
             "name": "keyword.ffp",
-            "match": "\\b(READ|SET|IN|WRITE|REVERSE|NOT|AS|STRING|NUMBER|ARRAY|APPEND|FOR|ENDFOR|SPLIT|THEN|BY|TO|IF|ENDIF|FROM|DO|MATCHES|PRINT|TRIM|UPPERCASE|LOWERCASE|SUBSTRING|SORT|LENGTH|EQUALS)\\b"
+            "match": "\\b(READ|SET|ELSE|IN|WRITE|REVERSE|NOT|AS|STRING|NUMBER|ARRAY|APPEND|FOR|ENDFOR|SPLIT|THEN|BY|TO|IF|ENDIF|FROM|DO|MATCHES|PRINT|TRIM|UPPERCASE|LOWERCASE|SUBSTRING|SORT|LENGTH|EQUALS)\\b"
+        },
+        {
+            "name": "support.class.ffp",
+            "match": "\\S*@.*"
         },
         {
             "name": "string.ffp",
@@ -12,7 +16,7 @@
             "end": "\"",
             "patterns": [
                 {
-                    "name":"string.escape.ffp",
+                    "name":"constant.character.escape.ffp",
                     "match": "\\."
                 }
             ]

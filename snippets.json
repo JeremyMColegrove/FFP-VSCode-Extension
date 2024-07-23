@@ -97,5 +97,13 @@
         "body":[
             "LENGTH $1"
         ]
+    },
+    "AutoNewLine Directive": {
+        "prefix": "@AUTONEWLINE",
+        "body":["@AUTONEWLINE"]
+    },
+    "PrintExecutionTree Directive": {
+        "prefix": "@SHOWTREE",
+        "body":["@SHOWTREE"]
     }
 }
