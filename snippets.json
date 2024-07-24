@@ -8,16 +8,16 @@
         ],
         "description": "If statement"
     },
-    "For Loop": {
+    "Classic For Loop": {
         "prefix": "for",
         "body": [
-            "FOR $1 FROM $2 TO $3",
+            "FOR $1 FROM $2 TO $3 DO",
             "\t$4",
             "ENDFOR"
         ],
         "description": "For loop"
     },
-    "Iterator Loop": {
+    "Iterate Over Array": {
         "prefix": "for",
         "body": [
             "FOR $1 IN $2 DO",
@@ -26,13 +26,13 @@
         ],
         "description": "For loop"
     },
-    "Split String": {
+    "Split String to Array": {
         "prefix": "split",
         "body": [
             "SPLIT $1 BY $2 TO $3"
         ]
     },
-    "Matches Regex": {
+    "Regex Match Boolean": {
         "prefix": "matches",
         "body": [
             "\"$1\" MATCHES /$2/"
@@ -56,7 +56,7 @@
             "WRITE $1 TO $2"
         ]
     },
-    "Append to File": {
+    "Append to File/Array": {
         "prefix": "append",
         "body": [
             "APPEND $1 TO $2"
@@ -68,7 +68,7 @@
             "SUBSTRING $1 FROM $2 TO $3"
         ]
     },
-    "Print": {
+    "Print Value": {
         "prefix": "print",
         "body": [
             "PRINT $1"
@@ -98,12 +98,40 @@
             "LENGTH $1"
         ]
     },
-    "AutoNewLine Directive": {
-        "prefix": "@AUTONEWLINE",
+    "Auto Add Newline Directive": {
+        "prefix": "@autonewline",
         "body":["@AUTONEWLINE"]
     },
-    "PrintExecutionTree Directive": {
-        "prefix": "@SHOWTREE",
-        "body":["@SHOWTREE"]
+    "Sleep": {
+        "prefix": "sleep",
+        "body":["SLEEP $1"]
+    },
+    "Find Regex Matches in Array": {
+        "prefix":"find",
+        "body":["FIND /$1/ IN $2"]
+    },
+    "Replace All Matches": {
+        "prefix":"replace",
+        "body":["REPLACE $1 WITH $2 IN $3"]
+    },
+    "Replace First Match": {
+        "prefix":"replace",
+        "body":["REPLACE FIRST $1 WITH $2 IN $3"]
+    },
+    "Copy File": {
+        "prefix":"copy",
+        "body":["COPY $1 TO $2"]
+    },
+    "Delete File": {
+        "prefix":"delete",
+        "body":["DELETE $1"]
+    },
+    "Join Array with Delimiter": {
+        "prefix":"join",
+        "body":["JOIN $1 WITH $2"]
+    },
+    "Assert Condition": {
+        "prefix":"assert",
+        "body":["ASSERT $1"]
     }
 }
