@@ -133,5 +133,9 @@
     "Assert Condition": {
         "prefix":"assert",
         "body":["ASSERT $1"]
+    },
+    "Send Network Request": {
+        "prefix":"send",
+        "body":["SEND $1 REQUEST TO $2 WITH BODY \"$3\" WITH HEADERS \"$4\" TO $5"]
     }
 }
